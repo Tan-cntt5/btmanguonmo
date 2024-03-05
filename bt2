@@ -1,0 +1,15 @@
+<?php
+// Nhập số nguyên dương a từ người dùng
+echo "Nhập số nguyên dương a: ";
+$a = intval(trim(fgets(STDIN)));
+
+// Nhập số nguyên dương b từ người dùng
+echo "Nhập số nguyên dương b: ";
+$b = intval(trim(fgets(STDIN)));
+
+// Tính kết quả chia lấy phần dư của a cho b
+$remainder = $a % $b;
+
+// In ra kết quả
+echo "Kết quả chia lấy phần dư của $a cho $b là: $remainder";
+?>
