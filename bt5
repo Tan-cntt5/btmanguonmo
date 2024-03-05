@@ -1,0 +1,17 @@
+<?php
+// Nhập ba số nguyên a, b, c từ người dùng
+echo "Nhập số nguyên a: ";
+$a = intval(trim(fgets(STDIN)));
+
+echo "Nhập số nguyên b: ";
+$b = intval(trim(fgets(STDIN)));
+
+echo "Nhập số nguyên c: ";
+$c = intval(trim(fgets(STDIN)));
+
+// Tìm giá trị lớn nhất
+$max_value = max($a, $b, $c);
+
+// In ra giá trị lớn nhất
+echo "Giá trị lớn nhất là: $max_value";
+?>
