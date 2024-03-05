@@ -1,0 +1,22 @@
+<?php
+// Đọc số nguyên N từ dòng lệnh
+echo "Nhập số nguyên N: ";
+$N = intval(trim(fgets(STDIN)));
+
+// Đọc dãy số từ dòng lệnh
+echo "Nhập dãy số (N-1 số, mỗi số cách nhau bởi khoảng trắng): ";
+$input = trim(fgets(STDIN));
+$input_array = explode(" ", $input);
+
+// Tính tổng các số từ 1 đến N
+$expected_sum = ($N * ($N + 1)) / 2;
+
+// Tính tổng các số trong dãy
+$actual_sum = array_sum($input_array);
+
+// Tìm số còn thiếu
+$missing_number = $expected_sum - $actual_sum;
+
+// In ra số còn thiếu
+echo "Số còn thiếu là: $missing_number";
+?>
