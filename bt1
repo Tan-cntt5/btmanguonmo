@@ -1,0 +1,11 @@
+<?php
+// Nhập số nguyên N từ người dùng
+echo "Nhập số nguyên N: ";
+$N = intval(trim(fgets(STDIN)));
+
+// Tính giá trị tuyệt đối của N
+$absolute_value = abs($N);
+
+// In ra giá trị tuyệt đối
+echo "Giá trị tuyệt đối của $N là: $absolute_value";
+?>
