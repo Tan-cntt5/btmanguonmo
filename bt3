@@ -1,0 +1,11 @@
+<?php
+// Nhập nhiệt độ Fahrenheit từ người dùng
+echo "Nhập nhiệt độ Fahrenheit: ";
+$F = floatval(trim(fgets(STDIN)));
+
+// Tính nhiệt độ Celsius
+$C = (5 / 9) * ($F - 32);
+
+// In ra nhiệt độ tương đương theo độ Celsius
+echo "Nhiệt độ tương đương theo độ Celsius là: $C °C";
+?>
