@@ -1,0 +1,18 @@
+<?php
+// Đọc số nguyên dương N từ dòng lệnh
+echo "Nhập số nguyên dương N: ";
+$N = intval(trim(fgets(STDIN)));
+
+// In ra giá trị của N và các bước của thuật toán
+echo "$N ";
+while ($N != 1) {
+    if ($N % 2 == 0) {
+        // Nếu N là số chẵn, chia N cho 2
+        $N /= 2;
+    } else {
+        // Nếu N là số lẻ, nhân N cho 3 và cộng thêm 1
+        $N = $N * 3 + 1;
+    }
+    echo "$N ";
+}
+?>
