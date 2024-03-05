@@ -1,0 +1,13 @@
+<?php
+// Nhập thời gian tính bằng giây từ dòng lệnh
+echo "Nhập thời gian (số giây): ";
+$seconds = intval(trim(fgets(STDIN)));
+
+// Chuyển đổi thời gian thành giờ, phút và giây
+$hours = floor($seconds / 3600);
+$minutes = floor(($seconds % 3600) / 60);
+$remaining_seconds = $seconds % 60;
+
+// In ra màn hình thời gian dưới dạng giờ, phút và giây
+echo "Thời gian là: $hours giờ, $minutes phút, $remaining_seconds giây";
+?>
