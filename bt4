@@ -1,0 +1,21 @@
+<?php
+// Nhập số nguyên dương a từ người dùng
+echo "Nhập số nguyên dương a: ";
+$a = intval(trim(fgets(STDIN)));
+
+// Nhập số nguyên dương b từ người dùng
+echo "Nhập số nguyên dương b: ";
+$b = intval(trim(fgets(STDIN)));
+
+// Giải phương trình bậc I ax + b = 0
+if ($a == 0) {
+    if ($b == 0) {
+        echo "Phương trình có vô số nghiệm.";
+    } else {
+        echo "Phương trình vô nghiệm.";
+    }
+} else {
+    $x = -$b / $a;
+    echo "Nghiệm của phương trình là x = $x.";
+}
+?>
